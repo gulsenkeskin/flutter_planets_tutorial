@@ -9,8 +9,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: <Widget>[
-          const GradientAppBar(title: "treva"),
+        children: const <Widget>[
+          GradientAppBar(title: "treva"),
           HomePageBody(),
         ],
       ),
@@ -33,7 +33,7 @@ class GradientAppBar extends StatelessWidget {
       height: statusBarHeight + barHeight,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-            colors: [Color(0xFF3366FF), Color(0xFF00CCFF)],
+            colors: [Color(0xFF574AA4), Color(0xFF7D74B9),],
             begin: FractionalOffset(0.0, 0.0),
             end: FractionalOffset(1.0, 0.0),
             stops: [0.0, 1.0],
@@ -46,7 +46,7 @@ class GradientAppBar extends StatelessWidget {
               color: Colors.white,
               fontFamily: 'Poppins',
               fontWeight: FontWeight.w600,
-              fontSize: 36.0),
+              fontSize: 34.0),
         ),
       ),
     );
